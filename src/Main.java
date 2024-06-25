@@ -60,7 +60,7 @@ public class Main {
         System.out.println();
         //Imprimir o funcionário com a maior idade.
         System.out.println("O FUNCIONÁRIO COM A MAIOR IDADE");
-        // 3.9 – Imprimir o funcionário com a maior idade.
+        //Imprimir o funcionário com a maior idade.
         Funcionario maisVelho = Collections.min(funcionarios, Comparator.comparing(Funcionario::getDataNascimento));
         int idadeMaisVelho = LocalDate.now().getYear() - maisVelho.getDataNascimento().getYear();
         System.out.println("Funcionário com maior idade: " + maisVelho.getNome() + ", Idade: " + idadeMaisVelho);
